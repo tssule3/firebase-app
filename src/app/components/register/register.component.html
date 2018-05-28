@@ -1,0 +1,15 @@
+<form class="form-signin">
+  <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+
+  <img src="../../../assets/register.png" alt="" width="200px">
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="inputEmail" class="form-control extraStyle"
+         placeholder="Email address" required autofocus #user> <br>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" class="form-control extraStyle"
+         placeholder="Password" required #pass>
+  <br><br>
+  <button class="btn btn-lg btn-info btn-block extraStyle"
+          (click)="createUser(user.value, pass.value)">Sign Up</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+</form>
